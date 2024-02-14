@@ -1,4 +1,5 @@
 const user = require("./userSchema");
+const recipe = require("./recipeSchema");
 
 const squema = `#graphql
     type Query {
@@ -8,6 +9,7 @@ const squema = `#graphql
         _empty: String
     }
     ${user}
+    ${recipe}
 `;
 
 module.exports = squema;
